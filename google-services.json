@@ -1,63 +1,34 @@
 {
   "project_info": {
-    "project_number": "190848741958",
-    "firebase_url": "https://androidspinner-34692-default-rtdb.europe-west1.firebasedatabase.app",
-    "project_id": "androidspinner-34692",
-    "storage_bucket": "androidspinner-34692.appspot.com"
+    "project_number": "586833734162",
+    "firebase_url": "https://art-on-the-move-1d505-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "art-on-the-move-1d505",
+    "storage_bucket": "art-on-the-move-1d505.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:190848741958:android:0f254df1a260b7b3d1d047",
+        "mobilesdk_app_id": "1:586833734162:android:df6d2886e817cd6dfd86cb",
         "android_client_info": {
           "package_name": "com.anyitrecruitment"
         }
       },
       "oauth_client": [
         {
-          "client_id": "190848741958-m95o56hr40hgig0n4n1rmvda0tmoh8ts.apps.googleusercontent.com",
+          "client_id": "586833734162-0str891jaugok5dr8lifq6dumghmvps8.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDlX-8hE2zOrvUiOc8MSZ1UOLhlCbD5Ysc"
+          "current_key": "AIzaSyCaD209TnqkPqx7fDgykLICVGaIQI4_0w4"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "190848741958-m95o56hr40hgig0n4n1rmvda0tmoh8ts.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:190848741958:android:7ee8ab48100b70d4d1d047",
-        "android_client_info": {
-          "package_name": "com.anyitrecruitment.temperaturecricket"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "190848741958-m95o56hr40hgig0n4n1rmvda0tmoh8ts.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyDlX-8hE2zOrvUiOc8MSZ1UOLhlCbD5Ysc"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "190848741958-m95o56hr40hgig0n4n1rmvda0tmoh8ts.apps.googleusercontent.com",
+              "client_id": "586833734162-0str891jaugok5dr8lifq6dumghmvps8.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
