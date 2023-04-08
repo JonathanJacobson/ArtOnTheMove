@@ -13,14 +13,14 @@ public class Contact
     private String contactPhoneNumber;
     private String contactInstitution;
     private String contactJobType;
-    private String contactDetails;
+    private String projectName;
 
     public Contact()
     {
 
     }
 
-    public Contact(String contactId, String contactFirstName, String contactLastName, String contactEmail, String contactPassword, String contactPhoneNumber, String contactInstitution, String contactJobType, String contactDetails)
+    public Contact(String contactId, String contactFirstName, String contactLastName, String contactEmail, String contactPassword, String contactPhoneNumber, String contactInstitution, String contactJobType, String projectName)
     {
         this.contactId = contactId;
         this.contactFirstName = contactFirstName;
@@ -30,7 +30,7 @@ public class Contact
         this.contactPhoneNumber = contactPhoneNumber;
         this.contactInstitution = contactInstitution;
         this.contactJobType = contactJobType;
-        this.contactDetails = contactDetails;
+        this.projectName = projectName;
     }
 
     @Override
@@ -45,7 +45,7 @@ public class Contact
                 ", contactPhoneNumber='" + contactPhoneNumber + '\'' +
                 ", contactInstitution='" + contactInstitution + '\'' +
                 ", contactJobType='" + contactJobType + '\'' +
-                ", contactDetails='" + contactDetails + '\'' +
+                ", projectName='" + projectName + '\'' +
                 '}';
     }
 
@@ -129,13 +129,13 @@ public class Contact
         this.contactJobType = contactJobType;
     }
 
-    public String getContactDetails()
+    public String getProjectName()
     {
-        return contactDetails;
+        return projectName;
     }
 
-    public void setContactDetails(String contactDetails)
+    public void setProjectName(String projectName)
     {
-        this.contactDetails = contactDetails;
+        this.projectName = projectName;
     }
 }

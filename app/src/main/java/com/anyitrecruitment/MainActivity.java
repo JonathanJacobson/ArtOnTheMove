@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     ListView listViewArtists; */
     //Contact
     ListView listViewContacts;
-    EditText txtContactDetails; //t1 out
+    EditText txtProjectName; //t1 out
     EditText txtContactEmail;
     EditText txtContactFirstName;
     EditText txtContactId;
@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
 
         /************************************************/
 
-        txtContactDetails = (EditText) findViewById(R.id.txtContactDetails);
+        txtProjectName = (EditText) findViewById(R.id.txtProjectName);
         spinner = (Spinner) findViewById(R.id.spinnerdata);
         btnadd = (Button) findViewById(R.id.btnadd);
         dbref = FirebaseDatabase.getInstance().getReference("AndroidSpinner");
@@ -122,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
         String contactPhoneNumber = txtContactPhoneNumber.getText().toString().trim();
         String contactInstitution = txtContactInstitution.getText().toString().trim();
         String contactJobType = txtContactJobType.getText().toString().trim();
-        String contactDetails = txtContactDetails.getText().toString().trim();
+        String projectName = txtProjectName.getText().toString().trim();
 
         /*
         String name = editTextName.getText().toString().trim();
@@ -138,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
 
             //creating an Artist Object
             //Artist artist = new Artist(id, name, genre);
-            Contact contact = new Contact(contactId, contactFirstName, contactLastName, contactEmail, contactPassword, contactPhoneNumber, contactInstitution, contactJobType, contactDetails);
+            Contact contact = new Contact(contactId, contactFirstName, contactLastName, contactEmail, contactPassword, contactPhoneNumber, contactInstitution, contactJobType, projectName);
 
             //Saving the Artist
             databaseContacts.child(contactId).setValue(contact);
@@ -156,12 +156,12 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void insertdata() {
-        String data = txtContactDetails.getText().toString().trim();
+        String data = txtProjectName.getText().toString().trim();
         dbref.push().setValue(data)
                 .addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
-                        txtContactDetails.setText("");
+                        txtProjectName.setText("");
                         list.clear();
                         fetchdata();
                         adapter.notifyDataSetChanged();
