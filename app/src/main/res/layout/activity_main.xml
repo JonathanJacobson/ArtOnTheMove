@@ -14,6 +14,7 @@
         android:layout_marginTop="2dp"
         android:layout_marginRight="20dp"
         android:ems="10"
+        android:textSize="15sp"
         android:gravity="center_horizontal"
         android:hint="Enter Your Project Name"
         android:id="@+id/txtProjectName"/>
@@ -25,6 +26,7 @@
         android:layout_marginTop="2dp"
         android:layout_marginRight="20dp"
         android:ems="10"
+        android:textSize="15sp"
         android:gravity="center_horizontal"
         android:hint="Enter Your Contact ID"
         android:visibility="gone"
@@ -36,6 +38,7 @@
         android:layout_marginTop="2dp"
         android:layout_marginRight="20dp"
         android:ems="10"
+        android:textSize="15sp"
         android:gravity="center_horizontal"
         android:hint="Enter Your Contact FirstName"
         android:id="@+id/txtContactFirstName"/>
@@ -46,6 +49,7 @@
         android:layout_marginTop="2dp"
         android:layout_marginRight="20dp"
         android:ems="10"
+        android:textSize="15sp"
         android:gravity="center_horizontal"
         android:hint="Enter Your Contact LastName"
         android:id="@+id/txtContactLastName"/>
@@ -56,6 +60,7 @@
         android:layout_marginTop="2dp"
         android:layout_marginRight="20dp"
         android:ems="10"
+        android:textSize="15sp"
         android:gravity="center_horizontal"
         android:hint="Enter Your Contact Email"
         android:id="@+id/txtContactEmail"/>
@@ -66,6 +71,7 @@
         android:layout_marginTop="2dp"
         android:layout_marginRight="20dp"
         android:ems="10"
+        android:textSize="15sp"
         android:gravity="center_horizontal"
         android:hint="Enter Your Contact Password"
         android:id="@+id/txtContactPassword"/>
@@ -76,6 +82,7 @@
         android:layout_marginTop="2dp"
         android:layout_marginRight="20dp"
         android:ems="10"
+        android:textSize="15sp"
         android:gravity="center_horizontal"
         android:hint="Enter Your Contact Phone Number"
         android:id="@+id/txtContactPhoneNumber"/>
@@ -86,6 +93,7 @@
         android:layout_marginTop="2dp"
         android:layout_marginRight="20dp"
         android:ems="10"
+        android:textSize="15sp"
         android:gravity="center_horizontal"
         android:hint="Enter Your Contact Institution"
         android:id="@+id/txtContactInstitution"/>
@@ -96,6 +104,7 @@
         android:layout_marginTop="2dp"
         android:layout_marginRight="20dp"
         android:ems="10"
+        android:textSize="15sp"
         android:gravity="center_horizontal"
         android:hint="Enter Your Contact Job Type"
         android:id="@+id/txtContactJobType"/>
@@ -114,5 +123,13 @@
         android:text="Add to Firebase"
         android:textSize="20sp"
         android:id="@+id/btnadd"
+        android:textColor="#000"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to Projects"
+        android:textSize="20sp"
+        android:id="@+id/btnProject"
         android:textColor="#000"/>
 </LinearLayout>

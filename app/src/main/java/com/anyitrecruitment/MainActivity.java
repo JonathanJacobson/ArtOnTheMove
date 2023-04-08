@@ -2,6 +2,8 @@ package com.anyitrecruitment;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -54,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
 
     /******************************************/
 
-    Button btnadd;
+    Button btnadd, btnProject;
     Spinner spinner;
     DatabaseReference dbref;
     ValueEventListener listener;
@@ -89,6 +91,7 @@ public class MainActivity extends AppCompatActivity {
         txtProjectName = (EditText) findViewById(R.id.txtProjectName);
         spinner = (Spinner) findViewById(R.id.spinnerdata);
         btnadd = (Button) findViewById(R.id.btnadd);
+        btnProject = (Button) findViewById(R.id.btnProject);
         dbref = FirebaseDatabase.getInstance().getReference("AndroidSpinner");
         //Please change your database URL to https://androidspinner-34692-default-rtdb.europe-west1.firebasedatabase.app
 
@@ -106,6 +109,29 @@ public class MainActivity extends AppCompatActivity {
         });
 
         fetchdata();
+
+
+
+        btnProject.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+
+            if(txtProjectName.getText().toString().isEmpty())
+            {
+                Toast.makeText(MainActivity.this, "Please enter all fields", Toast.LENGTH_SHORT).show();
+            }
+            else
+            {
+                String name = txtProjectName.getText().toString().trim();
+                Intent intent = new Intent(MainActivity.this,
+                        com.anyitrecruitment.ProjectActivity.class);
+                intent.putExtra("name", name);
+                startActivity(intent);
+            }
+
+        }
+    });
+
     }
 
     /*

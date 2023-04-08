@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProjectActivity">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:textSize="15sp"
+        android:gravity="center_horizontal"
+        android:hint="Enter Your Project Name"
+        android:id="@+id/txtProjectName"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txtProjectReferenceNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:textSize="15sp"
+            android:gravity="center_horizontal"
+            android:hint="Ref# Number" />
+
+        <EditText
+            android:id="@+id/txtProjectPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:textSize="15sp"
+            android:gravity="center_horizontal"
+            android:hint="Password" />
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:textSize="15sp"
+        android:gravity="center_horizontal"
+        android:hint="Enter Transport Type"
+        android:id="@+id/txtProjectTypeOfTransport"/>
+
+    <EditText
+        android:id="@+id/txtProjectOrigin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Enter Project Origin"
+        android:textSize="15sp"
+        android:visibility="gone"
+        tools:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txtProjectDepartureDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:textSize="15sp"
+            android:gravity="center_horizontal"
+            android:hint="Enter Departure Date" />
+
+        <EditText
+            android:id="@+id/txtProjectDepartureTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:textSize="15sp"
+            android:gravity="center_horizontal"
+            android:hint="Enter Departure Time" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/txtProjectDestination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Enter Project Destination"
+        android:textSize="15sp"
+        android:visibility="gone"
+        tools:visibility="gone" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:textSize="15sp"
+            android:gravity="center_horizontal"
+            android:hint="Enter Arrival Date"
+            android:id="@+id/txtProjectArrivalDate"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:textSize="15sp"
+            android:gravity="center_horizontal"
+            android:hint="Enter Arrival Time"
+            android:id="@+id/txtProjectArrivalTime"/>
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:textSize="15sp"
+        android:gravity="center_horizontal"
+        android:hint="Enter Lender Institution Registrar"
+        android:id="@+id/txtProjectLenderInstitutionRegistrar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/txtProjectLenderCity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:textSize="15sp"
+            android:gravity="center_horizontal"
+            android:hint="Enter Lender City" />
+
+        <EditText
+            android:id="@+id/txtProjectLenderCountry"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:textSize="15sp"
+            android:gravity="center_horizontal"
+            android:hint="Enter Lender Country" />
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:textSize="15sp"
+        android:gravity="center_horizontal"
+        android:hint="Enter Project Borrower Institution Registrar"
+        android:id="@+id/txtProjectBorrowerInstitutionRegistrar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/txtProjectBorrowerCity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:textSize="15sp"
+            android:gravity="center_horizontal"
+            android:hint="Enter Borrower City" />
+
+        <EditText
+            android:id="@+id/txtProjectBorrowerCountry"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:textSize="15sp"
+            android:gravity="center_horizontal"
+            android:hint="Borrower Country" />
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:textSize="15sp"
+        android:gravity="center_horizontal"
+        android:hint="Enter Project Transport Plan File"
+        android:id="@+id/txtProjectTransportPlanFile"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:id="@+id/spinnerdata"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add to Firebase"
+        android:textSize="20sp"
+        android:id="@+id/btnadd"
+        android:textColor="#000"/>
+</LinearLayout>
